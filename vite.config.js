@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
   server: {
-    host: '0.0.0.0',
-  }
-})
+    host: true, // Permite acessar de outros dispositivos
+    allowedHosts: [
+      "46f9dd6e-f4b5-4aa5-ac68-b3319645f8bd-00-1lbxsrig1z7b.riker.replit.dev",
+    ],
+  },
+});
